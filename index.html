@@ -8921,7 +8921,7 @@ function returnFileMIDs(FileMIDs,rawFileCounts,Fragment_Formulas){
            //make the primary metabolites larger to make room for structues
            primary_metabolite_radius: 20
        };*/
-       var options = { menu: 'all', fill_screen: true };
+       var options = { menu: 'all', fill_screen: true, identifiers_on_map:'name' };
 
        // make a Builder
        var builder = escher.Builder(data, null, null, d3.select('#map_container'), options); //AK: Heavy lifting line which calls upon escher.Builder to generate the escher UI with custom options specified by the var options
